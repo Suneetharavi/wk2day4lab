@@ -58,19 +58,50 @@ main(23,24)
 
 function main(cost,paid)
 {
-    let i=0
-    let quarters=0
-    let change=paid-cost;
-    while(i<change)
-    {
+   
+    let n=paid-cost;
+   
+    console.log("The Change need to be paid:" +n+'\n')
+        hundredd = Math.floor(n/100)
+     
+        n %=100
 
-        quarters+=4
-        i++
-    }
-    console.log(quarters +"quarters")
+        fiftyd = Math.floor(n/50)
+        n %=50
 
+        twentyd = Math.floor(n/20)
+        n %=20
+
+        tend = Math.floor(n/10)
+        n %=10
+
+        fived = Math.floor(n/5)
+        n %=5
+
+        oned = Math.floor(n/1)
+        n %=1
+
+        halfd = Math.floor(n/0.50)
+        n %=0.50
+
+        q = Math.floor(n/0.25)
+        n %= 0.25
+
+        d =Math.floor(n/0.10)
+        n %= 0.10
+
+        ni = Math.floor(n/0.05)
+
+        n %= 0.05
+console.log(n)
+        console.log(n/0.01)
+        c = Math.ceil(n/0.01)
+       
+
+        console.log(hundredd +"Hundreds Dollars \n"+ fiftyd+"FiftyDollars\n"+  twentyd +"TwentyDoalls\n"+  tend+"Ten Dollars\n"+fived+"Five Dollars\n"+
+        oned+"One Dallars\n"+halfd+"Half Dollars\n"+q +"Quarters\n " + d +"Dimes\n " + ni + "Nickels\n" + c+"Cents\n")
 }
-main(23,24)
+main(380.90,500)
 
 
 
@@ -100,4 +131,6 @@ for ( let i= 1; i< 101; i ++ ) {
   } 
   
 
-  console.log("hi")
+
+
+ 
